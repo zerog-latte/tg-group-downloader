@@ -24,7 +24,7 @@ with TelegramClient('anon', api_id, api_hash) as client:
   entity = client.get_entity(int(group_id))
 
   # Fetch group messages
-  messages = client.get_messages(entity, limit=message_limit)
+  messages = client.get_messages(entity, limit=int(message_limit))
 
   # Iterate through messages
   for message in messages:

@@ -1,4 +1,6 @@
 .env
 .venv/**
 anon.session
+*.session
 *.ipynb
+output/**
