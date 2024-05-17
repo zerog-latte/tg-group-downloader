@@ -2,29 +2,24 @@
 
 This script allows you to download photos and videos from a Telegram group. It uses the Telethon library to connect to Telegram and fetch messages containing media attachments (photos or videos) from the specified group. The downloaded media files are saved to a local directory.
 
-## Installation
-
-1. Clone the repository:
-```git clone https://github.com/zerog-latte/tg-group-downloader.git```
-
-2. Navigate to the cloned repository:
-```cd tg-group-downloader```
-
-2. Install the required Python packages:
-
-```pip install -r requirements.txt```
-
-1. Create a .env file in the project directory and configure it with your Telegram API credentials and other settings. See the example .env file provided.
-
-2. Run the main.py script:
-
-```python main.py```
-
-## Usage
+## Basic Usage
 
 Ensure that you have the necessary permissions to access the group and that your Telegram API credentials are correctly configured in the .env file.
 
 The script will connect to Telegram, authenticate using your phone number, and fetch the latest messages from the specified group. It will then iterate through each message and download any photos or videos attached to the message.
+
+1. Clone the repository:
+`git clone https://github.com/zerog-latte/tg-group-downloader.git`
+
+2. Navigate to the cloned repository: `cd tg-group-downloader`
+
+2. Install the required Python packages: `pip install -r requirements.txt`
+
+1. Create a .env file in the project directory and configure it with your Telegram API credentials and other settings. See the example .env file provided.
+
+2. Run the main.py script: `python main.py`
+
+## Installation
 
 ### Windows
 To run the script on Windows, you can create a start.ps1 script with the following content or run it directly in the PowerShell console:
